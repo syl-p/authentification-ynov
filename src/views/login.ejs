@@ -1,0 +1,10 @@
+<h1>Page de connexion</h1>
+<% if (error) { %>
+<p style="color: red;"><%= error %></p>
+<% } %>
+
+<form method="POST" action="/login">
+    <input name="username" placeholder="Nom d'utilisateur" required />
+    <input type="password" name="password" placeholder="Mot de passe" required />
+    <button type="submit">Se connecter</button>
+</form>
